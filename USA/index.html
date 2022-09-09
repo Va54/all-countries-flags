@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            .stars {
+                text-shadow: 35px 0 0 #FFFFFF, 70px 0 0 #FFFFFF, 105px 0 0 #FFFFFF, 140px 0 0 #FFFFFF, 175px 0 0 #FFFFFF, 17px 14px 0 #FFFFFF, 52px 14px 0 #FFFFFF, 87px 14px 0 #FFFFFF, 122px 14px 0 #FFFFFF, 157px 14px 0 #FFFFFF, 0 28px 0 #FFFFFF, 35px 28px 0 #FFFFFF, 70px 28px 0 #FFFFFF, 105px 28px 0 #FFFFFF, 140px 28px 0 #FFFFFF, 175px 28px 0 #FFFFFF, 17px 42px 0 #FFFFFF, 52px 42px 0 #FFFFFF, 87px 42px 0 #FFFFFF, 122px 42px 0 #FFFFFF, 157px 42px 0 #FFFFFF, 0 56px 0 #FFFFFF, 35px 56px 0 #FFFFFF, 70px 56px 0 #FFFFFF, 105px 56px 0 #FFFFFF, 140px 56px 0 #FFFFFF, 175px 56px 0 #FFFFFF, 17px 70px 0 #FFFFFF, 52px 70px 0 #FFFFFF, 87px 70px 0 #FFFFFF, 122px 70px 0 #FFFFFF, 157px 70px 0 #FFFFFF, 0 84px 0 #FFFFFF, 35px 84px 0 #FFFFFF, 70px 84px 0 #FFFFFF, 105px 84px 0 #FFFFFF, 140px 84px 0 #FFFFFF, 175px 84px 0 #f3f3f3, 17px 98px 0 #f3f3f3, 52px 98px 0 #f3f3f3, 87px 98px 0 #f3f3f3, 122px 98px 0 #f3f3f3, 157px 98px 0 #f3f3f3, 0 112px 0 #f3f3f3, 35px 112px 0 #f3f3f3, 70px 112px 0 #f3f3f3, 105px 112px 0 #f3f3f3, 140px 112px 0 #f3f3f3, 175px 112px 0 #f3f3f3;
+            }
+        }
+
+        .USA {
+            box-shadow: 0 20px 0 #FFFFFF, 0 40px 0 #B31942, 0 60px 0 #FFFFFF, 0 80px 0 #B31942, 0 100px 0 #FFFFFF, 0 120px 0 #B31942, 0 140px 0 #FFFFFF, 0 160px 0 #B31942, 0 180px 0 #FFFFFF, 0 200px 0 #B31942, 0 220px 0 #FFFFFF, 0 240px 0 #B31942;
+            @apply absolute
+            block
+            bg-[#B31942]
+            w-[31rem]
+            top-8
+            h-5;
+            @apply after:content-['\2605']
+            after:absolute after:block
+            after:m-1 after:w-[31rem]
+            after:text-[#FFFFFF]
+            after:stars
+            after:text-sm;
+            @apply before:content-['\0020']
+            before:absolute
+            before:block
+            before:bg-[#0A3161]
+            before:w-52
+            before:h-[8.7rem];
+        }
+
+    </style>
+</head>
+<body>
+<div class="flex justify-center bg-white">
+    <div class="USA"></div>
+</div>
+</body>
+</html>
